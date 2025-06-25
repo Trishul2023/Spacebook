@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spacebook - Login</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 class="holographic-text">Spacebook</h1>
+            <ul>
+                <li><a href="../html/index.html" class="active">Login</a></li>
+                <li><a href="../html/home.html">Home</a></li>
+                <li><a href="../html/signup.html">Sign-Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Welcome to Spacebook</h1>
+        <div class="holographic-text">
+            <img id="MDRS" src="../assets/cover.png" alt="advertise">
+            <p></p><button class="marssociety" onclick="window.location.href='marssociety.html'">click here For Analog Astronaut application</button></p>
+        </div>
+        
+        <form class="holographic-text" id="loginForm" onsubmit="return handleLogin(event)">
+            <div class="holographic-text">
+                <input type="text" id="username" name="username" placeholder="Username" required>
+                <span class="error" id="usernameError"></span>
+            </div>
+            <div class="holographic-text">
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <span class="error" id="passwordError"></span>
+            </div>
+             <div class="holographic-text">
+               
+                <button onclick="window.location.href='profile.html'">Login</button>
+                
+            </div>
+            <div>
+                
+                <p><button onclick="window.location.href='Passwordreset.html'">Forget Password</button></p>
+            </div>
+            
+            <p>Don't have an account? <a href="../html/signup.html">Sign Up</a></p>
+            
+        </form>
+        
+    </main>
+    <footer>
+        <p>© 2025 Spacebook. All rights reserved.</p>
+    </footer>
+    <script src="../js/login.js"></script>
+</body>
+</html>
