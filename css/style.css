@@ -1,0 +1,227 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image : url("")
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+/* Header and Navigation */
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: perspective(1000px) rotate(0deg);
+    transition: transform 0.5s;
+}
+.holographic-element {
+    background:  linear-gradient(
+        45deg
+        #ffb4f7,
+        #ffecc6,
+        #ff95ec,
+        #d384ff,
+        #8eadff,
+        #ffb4f7,
+    );
+    background-size: 200% 100%;
+    animation: gradientShift 5s ease infinite;
+}
+.holographic-bg {
+    background-image: url();
+    opacity: .5;
+    background-size:cover
+}
+.holographic-card {
+    transform: perspective(1000px) rotate(10deg);
+    transition: transform 0.5s;
+}
+.holographic-card:hover {
+    transform:perspective(1000px) rotate(0deg);
+}
+.holographic-button:hover {
+    filter:brightness(1.2);
+    transform: scale(1.05);
+}
+.holographic-button {
+    border: .5px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(45deg, #8eadff, #ff95ec);
+   
+}
+.holographic-text {
+    color:#00BFFF;
+    text-shadow: 0 0 10px #ff95ec, 0 0 20px #8eadff;
+    font-size: 1em;
+    
+}
+.holographic-text:hover {
+    filter:brightness(1.2);
+    transform: scale(1.05);
+
+}
+.welcome {
+    color:#00BFFF;
+    text-shadow: 0 0 10px #ff95ec, 0 0 20px #8eadff;
+    font-size: 3em;
+
+}
+.welcome:hover {
+    filter:brightness(1.2);
+    transform: scale(1.05);
+}
+.logo {
+    color: #00BFFF;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 12px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+nav ul li a.active {
+    background-color: #007BFF;
+    border-radius: 5px;
+}
+
+/* Main Content */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 120px);
+}
+
+h1 {
+    color: white;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.login-form {
+   
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+p {
+    margin-top: 15px;
+    color: #fdfbfb;
+}
+
+p a {
+   
+    color:#00BFFF;
+    text-shadow: 0 0 10px #ff95ec, 0 0 20px #8eadff;
+    font-size: 1em;
+
+
+}
+
+p a:hover {
+    filter:brightness(1.2);
+    transform: scale(1.05);
+}
+
+
+/* Error Messages */
+.error {
+    color: #e74c3c;
+    font-size: 12px;
+    display: block;
+    margin-top: 5px;
+    min-height: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .login-form {
+        margin: 10px;
+        padding: 15px;
+    }
+}
